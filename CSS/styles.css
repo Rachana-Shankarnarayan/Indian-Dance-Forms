@@ -1,0 +1,343 @@
+/* -------------------------
+ Global styles 
+----------------------------*/
+html {
+  font-family: "Inter", sans-serif;
+  font-size: var(--fs-base); /* base font-size (0.85rem = 13.6px) */
+  line-height: 1.8;
+}
+
+/**, *::before, *::after {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+a { text-decoration: none; }
+
+
+.dance-forms {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+} 
+
+
+
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+
+
+::-webkit-scrollbar { width: 16px; }
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 20px;
+  border: 4px solid;
+  }
+  
+.h1,
+.h2,
+.h3,
+.h4 {
+  display: block;
+  color: var(--foreground-primary);
+}
+
+.h1 {
+  font-size: var(--fs-1);
+  font-weight: 900;
+}
+
+.h2 {
+  font-size: var(--fs-2);
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: var(--fs-3);
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------
+Profile
+------------------*/
+.header {
+  background: #2F3061;
+  color: #F7FFF7;
+}
+
+  
+
+  
+  
+  .dance-container .h1 {
+  margin-bottom: 10px;
+  width:500px;
+  display:flex;
+  height: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  text-align: right;
+  background : blue;
+ 
+  }
+  
+  
+  .dance-container .h2 {
+  margin-bottom: 10px;
+  width:500px;
+  display:flex;
+  height: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  text-align: right;
+  background : red;
+  color: blue
+ 
+  }
+  
+  
+  @media (min-width: 1024px) {
+
+  :root {
+
+    /**
+     * typography 
+     */
+
+    --fs-base: 1rem;
+    --fs-1: 3rem;
+
+  }
+
+
+
+  /**
+   * REUSED STYLE 
+   */
+
+  .dance { max-width: 1150px; }
+  
+  
+  
+ @media (min-width: 768px) {
+
+  /**
+   * REUSED STYLE 
+   */
+
+  .dance { max-width: 800px; }
+
+}
+
+
+ .main .dance {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 60px;
+  }
+
+
+/*-----------------------------------*\ 
+  #BLOG SECTION
+\*-----------------------------------*/
+
+.dance {
+  background: var(--background-secondary);
+  padding: var(--py) 0;
+}
+
+.dance-forms .h2 {
+  line-height: 1.3;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.dance-blog { margin-bottom: 3rem; }
+
+.dance-layout {
+  background: var(--background-primary);
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.05);
+  transition: 0.25s ease;
+}
+
+.dance-layout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.dance-banner { display: none; }
+
+.dance-content { padding: 10px 5px; }
+
+.dance-layout .h3 {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.dance-layout.h3:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.dance-text { display: none; }
+
+
+
+
+
+/*-----------------------------------*\ 
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 550px screen
+ */
+
+@media (min-width: 550px) {
+
+  :root {
+
+    /**
+     * typography 
+     */
+
+    --fs-base: 0.90rem;
+
+  }
+
+
+  /**
+   * BLOG 
+   */
+
+  .dance-layout {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 20px;
+  }
+
+  .dance-banner {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+
+  .dance-banner-img {
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+
+
+
+
+/**
+ * responsive for larger than 650px screen
+ */
+
+@media (min-width: 650px) {
+
+  :root {
+
+    /**
+     * typography 
+     */
+
+    --fs-1: 2.25rem;
+
+  }
+  
+
+  .dance-text { display: block; }
+
+  .dance-text {
+    color: var(--foreground-secondary);
+    font-size: var(--fs-4);
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
