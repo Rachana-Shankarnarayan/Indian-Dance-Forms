@@ -4,17 +4,17 @@
    * light theme colors 
    */
 
-  --background-primary: hsl(0, 0%, 100%);
-  --background-secondary: hsl(0, 0%, 97%);
+  --background-primary: hsla(270, 22%, 93%, 0.24);
+  --background-secondary: hsl(240, 9%, 33%);
 
-  --action-primary: hsl(274, 30%, 91%);
-  --action-secondary: hsl(305, 5%, 52%);
+  --action-primary: hsl(193, 11%, 43%);
+  --action-secondary: hsl(205, 18%, 38%);
 
-  --foreground-primary: hsl(268, 39%, 20%);
-  --foreground-secondary: hsl(300, 18%, 32%);
-  --foreground-tertiary: hsl(276, 40%, 53%);
+  --foreground-primary: hsl(86, 18%, 59%);
+  --foreground-secondary: hsl(263, 52%, 25%);
+  --foreground-tertiary: hsl(276, 12%, 33%);
 
-  --accent: hsl(303, 20%, 18%);
+  --accent: hsl(270, 3%, 75%);
 }
 
 .dark-theme {
@@ -69,9 +69,10 @@
   --fs-base: 0.85rem;
   --fs-1: 1.875rem; /* font-size 1,2,3,4,5 */
   --fs-2: 1.5rem;
-  --fs-3: 1.25rem;
+  --fs-3: 1.20rem;
   --fs-4: 0.875rem;
-
+  --fs-5: 0.500rem;
+ 
   /**
      * spacing 
      */
@@ -188,6 +189,11 @@ html {
   font-weight: 700;
 }
 
+.h5 {
+  font-size:var(--fs-5);
+  font-weight: 400 lighter;
+}
+
 /*-----------------------------------*\ 
   #REUSED STYLE
 \*-----------------------------------*/
@@ -283,23 +289,31 @@ header .btn-group {
 
 .hero {
   background: var(--background-primary);
-  padding-top: 2rem;
-  padding-bottom: var(--py);
+  /*padding-top: 2rem; 
+  padding-bottom: var(--py); */
   text-align: center;
 }
 
 .hero .h1 {
   line-height: 1.6;
-  margin-bottom: 1rem;
+ /*margin-bottom: 3rem; */
   text-align: center;
+  margin-top:0%;
 }
 
 .hero .desc {
   color: var(--foreground-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 8rem;
   font-size: var(--fs-3);
-  text-align: center;
+  /*width: calc(100% - 80px); */
+  margin-right: 8rem;
   justify-content: center;
+  text-align: center;
+  display: inline-flexbox;
+  
+
+
   /*display: inline;*/
 
   /*max-width: max-content;*/
@@ -311,7 +325,7 @@ header .btn-group {
   text-indent: 80px 0;
   text-align: right;
   animation: corner-present;
-  color: rgb(29, 26, 26);
+  color: rgb(52, 51, 87);
 }
 
 /*-----------------------------------*\ 
@@ -362,7 +376,8 @@ header .btn-group {
 }
 
 .dance-text {
-  display: none;
+  /*display: none; */
+  display: block;
 }
 
 .dance-forms .dance-link {
