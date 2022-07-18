@@ -15,15 +15,12 @@ html {
 
 a { text-decoration: none; }
 
-
 .dance-forms {
   max-width: 800px;
   width: 85%;
   margin: 0 auto;
   padding: 60px 0;
 } 
-
-
 
 .item-details h3 + p {
   font-style: italic;
@@ -40,10 +37,7 @@ a { text-decoration: none; }
   border-bottom: none;
 }
 
-
-
 ::-webkit-scrollbar { width: 16px; }
-
 
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
@@ -74,24 +68,6 @@ a { text-decoration: none; }
   font-weight: 700;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -----------------
 Profile
 ------------------*/
@@ -99,12 +75,8 @@ Profile
   background: #2F3061;
   color: #F7FFF7;
 }
-
   
-
-  
-  
-  .dance-container .h1 {
+.dance-container .h1 {
   margin-bottom: 10px;
   width:500px;
   display:flex;
@@ -114,11 +86,9 @@ Profile
   padding: 0 40px;
   text-align: right;
   background : blue;
- 
-  }
-  
-  
-  .dance-container .h2 {
+}
+    
+.dance-container .h2 {
   margin-bottom: 10px;
   width:500px;
   display:flex;
@@ -130,49 +100,37 @@ Profile
   background : red;
   color: blue
  
-  }
-  
-  
-  @media (min-width: 1024px) {
-
+}
+    
+@media (min-width: 1024px) {
   :root {
-
     /**
      * typography 
      */
 
     --fs-base: 1rem;
     --fs-1: 3rem;
-
   }
-
-
 
   /**
    * REUSED STYLE 
    */
 
   .dance { max-width: 1150px; }
-  
-  
-  
- @media (min-width: 768px) {
 
+@media (min-width: 768px) {
   /**
    * REUSED STYLE 
    */
 
   .dance { max-width: 800px; }
-
 }
 
-
- .main .dance {
+.main .dance {
     display: grid;
     grid-template-columns: 5fr 2fr;
     gap: 60px;
-  }
-
+}
 
 /*-----------------------------------*\ 
   #BLOG SECTION
@@ -220,16 +178,12 @@ Profile
 }
 
 .dance-text { display: none; }
-
-
-
-
-
+}
 /*-----------------------------------*\ 
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-/**
+/*
  * responsive for larger than 550px screen
  */
 
@@ -244,7 +198,6 @@ Profile
     --fs-base: 0.90rem;
 
   }
-
 
   /**
    * BLOG 
@@ -262,7 +215,6 @@ Profile
     border-radius: 5px;
   }
 
-
   .dance-banner-img {
     width:  100%;
     height: 100%;
@@ -270,10 +222,6 @@ Profile
   }
 
 }
-
-
-
-
 
 /**
  * responsive for larger than 650px screen
@@ -291,7 +239,6 @@ Profile
 
   }
   
-
   .dance-text { display: block; }
 
   .dance-text {
@@ -304,7 +251,7 @@ Profile
     overflow: hidden;
     margin-bottom: 1rem;
   }
-
+}
   
 
 

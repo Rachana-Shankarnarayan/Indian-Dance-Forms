@@ -1,5 +1,3 @@
-
-
 function timeMonitor() {
     var r = new Date();
     var ampm = r.getHours( ) >= 12 ? ' PM' : ' AM';
@@ -23,13 +21,11 @@ function timeMonitor() {
     currentDate = currentDate + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
     document.getElementById("time").innerHTML = currentDate;
     timeChange();
-     }
+ }
 
-
-
-     function timeChange(){
+function timeChange(){
     var delay=1000; // Refresh rate in milli seconds
     runningTime=setTimeout(timeMonitor(),delay);
-    }
+}
  
 
